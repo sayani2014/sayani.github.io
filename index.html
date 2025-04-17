@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    :root {
+      --bg-color: #111827;
+      --text-color: #ffffff;
+    }
+    [data-theme="light"] {
+      --bg-color: #ffffff;
+      --text-color: #111827;
+    }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .slide-in {
+      animation: slideIn 1s ease forwards;
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .zoom-in {
+      animation: zoomIn 0.8s ease-in-out forwards;
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    @keyframes zoomIn {
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .delayed {
+      animation-delay: 0.5s;
+    }
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    .typed-text {
+      display: inline;
+      border-right: 2px solid;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body class="text-white font-sans" data-theme="dark">
+
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center bg-gray-800 shadow-md slide-in">
+    <h1 class="text-2xl font-bold">My Portfolio</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 fade-in parallax" style="background-image: url('https://source.unsplash.com/1600x900/?technology');">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4 zoom-in">Hi, I'm <span class="typed-text">SAYANI KOLEY</span></h2>
+    <p class="text-lg md:text-xl text-gray-300 mb-6 zoom-in delayed">Senior Software Engineer</p>
+    <a href="#projects" class="bg-indigo-600 px-6 py-2 rounded-full text-white hover:bg-indigo-700 transition transform hover:scale-105">View Projects</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-10 fade-in">
+    <h3 class="text-3xl font-bold mb-4 slide-in">About Me</h3>
+    <p class="text-gray-300 leading-relaxed max-w-2xl zoom-in">I'm a backend developer focusing on Spring Boot. I enjoy building robust APIs, scalable services, and learning new backend technologies. This portfolio is a space to share my journey and future projects.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-800 p-10 fade-in">
+    <h3 class="text-3xl font-bold mb-6 slide-in">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Example Project Card -->
+      <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:scale-105 transition-transform zoom-in">
+        <h4 class="text-xl font-semibold mb-2">Project Name</h4>
+        <p class="text-gray-300">Brief description of the project. This could be a Spring Boot API or something you're working on.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-10 fade-in">
+    <h3 class="text-3xl font-bold mb-4 slide-in">Contact</h3>
+    <p class="text-gray-300 mb-4 zoom-in">Feel free to connect with me:</p>
+    <div class="space-x-4">
+      <a href="https://github.com/sayani2014" target="_blank" class="underline text-indigo-400">GitHub</a>
+      <a href="mailto:sayanikoley8@gmail.com" class="underline text-indigo-400">Email</a>
+    </div>
+  </section>
+
+  <footer class="text-center p-4 text-gray-500 mt-10">
+    &copy; 2025 Sayani Koley. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const current = body.getAttribute('data-theme');
+      const newTheme = current === 'dark' ? 'light' : 'dark';
+      body.setAttribute('data-theme', newTheme);
+    }
+  </script>
+</body>
+</html>
