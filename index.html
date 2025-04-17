@@ -27,6 +27,12 @@
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
     }
+    .ml-1 {
+      margin-left: 48%;
+    }
+    .w-96 {
+      width: 76rem;
+    }
     @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -82,63 +88,111 @@
   </style>
 </head>
 <body class="text-white font-sans" data-theme="dark">
-
+ 
   <!-- Header -->
-  <header class="p-6 flex justify-between items-center bg-gray-800 shadow-md slide-in">
-    <h1 class="text-2xl font-bold">My Portfolio</h1>
-    <nav class="space-x-4">
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#projects" class="hover:underline">Projects</a>
-      <a href="#contact" class="hover:underline">Contact</a>
-    </nav>
-  </header>
+    <header class="p-6 flex justify-between items-center bg-gray-800 shadow-md slide-in">
+      <h1 class="text-2xl font-bold">My Portfolio</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#experience" class="hover:underline">Experience</a>
+        <a href="#skills" class="hover:underline">My Skills</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 fade-in parallax" style="background-image: url('https://source.unsplash.com/1600x900/?technology');">
-    <h2 class="text-4xl md:text-6xl font-bold mb-4 zoom-in">Hi, I'm <span class="typed-text">SAYANI KOLEY</span></h2>
-    <p class="text-lg md:text-xl text-gray-300 mb-6 zoom-in delayed">Senior Software Engineer</p>
-    <a href="#projects" class="bg-indigo-600 px-6 py-2 rounded-full text-white hover:bg-indigo-700 transition transform hover:scale-105">View Projects</a>
-  </section>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 fade-in parallax" style="background-image: url('https://source.unsplash.com/1600x900/?technology');">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4 zoom-in">Hi, I'm <span class="typed-text">Sayani Koley</span></h2>
+      <p class="text-lg md:text-xl text-gray-300 mb-6 zoom-in delayed">Senior Software Engineer | Full Stack Developer</p>
+      <a href="#contact" class="bg-indigo-600 px-6 py-2 rounded-full text-white hover:bg-indigo-700 transition transform hover:scale-105">Contact Me</a>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="p-10 fade-in">
-    <h3 class="text-3xl font-bold mb-4 slide-in">About Me</h3>
-    <p class="text-gray-300 leading-relaxed max-w-2xl zoom-in">I'm a backend developer focusing on Spring Boot. I enjoy building robust APIs, scalable services, and learning new backend technologies. This portfolio is a space to share my journey and future projects.</p>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="p-10 fade-in text-center">
+      <h3 class="text-3xl font-bold mb-4 slide-in">About Me</h3>
+      <p class="text-gray-300 leading-relaxed max-w-5xl mx-auto zoom-in text-justify">
+        I'm a Full Stack Developer with a passion for building impactful, end-to-end web applications. My strength lies in combining robust backend logic with intuitive and responsive frontend interfaces. I specialize in backend development using Spring Boot, where I design scalable APIs, implement secure authentication systems, and manage data using relational and NoSQL databases like MySQL and MongoDB.
+        <br/><br/>
+        On the frontend, I enjoy crafting clean and engaging user experiences using modern technologies like React.js and Tailwind CSS. I focus on writing reusable, maintainable components and delivering smooth interactions that enhance usability.
+        <br/><br/>
+        Beyond development, I have experience deploying applications using Docker and managing cloud infrastructure on platforms like AWS and Heroku. I'm comfortable setting up CI/CD pipelines, monitoring application performance, and ensuring production-readiness.
+        <br/><br/>
+        I thrive on solving real-world problems with code, learning new technologies, and continuously improving my skills. Whether it's building an API from scratch, debugging a tricky UI bug, or optimizing server performance—I’m all in. I'm currently focused on expanding my backend expertise while staying sharp with frontend trends and DevOps best practices.
+        <br/><br/>
+        Let’s build something great together.
+      </p>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="bg-gray-800 p-10 fade-in">
-    <h3 class="text-3xl font-bold mb-6 slide-in">Projects</h3>
-    <div class="grid md:grid-cols-2 gap-6">
-      <!-- Example Project Card -->
-      <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:scale-105 transition-transform zoom-in">
-        <h4 class="text-xl font-semibold mb-2">Project Name</h4>
-        <p class="text-gray-300">Brief description of the project. This could be a Spring Boot API or something you're working on.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-800 p-10 fade-in text-center">
+      <h3 class="text-3xl font-bold mb-6 slide-in">Experience</h3>
+      <div class="flex flex-col space-y-10 items-center">
+        <!-- Example Experience Card -->
+        <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:scale-105 transition-transform zoom-in w-100">
+          <h4 class="text-xl font-semibold mb-2">SENIOR SOFTWARE ENGINEER, HAPPIEST MINDS TECHNOLOGIES LIMITED</h4>
+          <p class="text-gray-300"> Oct 2021 - Present
+          	<li>Created server-side applications and APIs using Java and developed and maintained databases and schemas using both SQL and NoSQL databases.</li>
+		<li>Implemented caching mechanisms and optimized server-side performance for scalability and efficiency.</li>
+		<li>Utilized frontend frameworks like Angular to build interactive and dynamic web applications that ensure compatibility across various devices and screen sizes.</li>
+		<li>Implementing CI/CD pipelines to automate the build, test and deployment process.</li>
+		<li>Monitoring application performance and troubleshooting issues in staging and production environments.</li>
+		<li>Actively participated in experimenting with new technologies based on the requirements.</li>
+          </p>
+        </div>
+        <!-- Example Experience Card -->
+        <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:scale-105 transition-transform zoom-in w-96">
+          <h4 class="text-xl font-semibold mb-2">FELLOWSHIP, BRIDGELABZ SOLUTIONS PRIVATE LIMITED</h4>
+          <p class="text-gray-300"> May 2021 – Oct 2021
+          	<br/>
+          	Tech-intensive program on Spring Boot and Angular. Joined as a Java-Full Stack Developer with knowledge in Java, Spring, MySQL and Angular. Worked on multiple small applications on 			both frontend and backend tech-stacks.
+          </p>
+        </div>
+        <!-- Example Experience Card -->
+        <div class="bg-gray-700 rounded-xl p-6 shadow-md hover:scale-105 transition-transform zoom-in w-96">
+          <h4 class="text-xl font-semibold mb-2">INTERNSHIP, RELIANCE INDUSTRIES LIMITED</h4>
+          <p class="text-gray-300"> June 2019 – May 2020
+          	<br/>
+          	Joined as a fulltime intern and worked as RPA Developer to configure software robots to capture data and perform routine tasks ranging from automated emails to streamlining process 			flows or business operations.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-900 p-10 fade-in text-center">
+	  <h3 class="text-3xl font-bold mb-6 slide-in">Skills</h3>
+	  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-300 max-w-3xl mx-auto text-lg text-center">
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Java</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Spring Boot</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">REST API</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">GraphQL</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">MicroServices</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Angular 12</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Github</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Jenkins</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">AWS</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Postman</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Swagger</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Jira</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">Intellij</div>
+	    <div class="bg-gray-800 p-4 rounded-lg shadow-md hover:scale-105 transition-transform">VS Code</div>
+	  </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="p-10 fade-in">
-    <h3 class="text-3xl font-bold mb-4 slide-in">Contact</h3>
-    <p class="text-gray-300 mb-4 zoom-in">Feel free to connect with me:</p>
-    <div class="space-x-4">
-      <a href="https://github.com/sayani2014" target="_blank" class="underline text-indigo-400">GitHub</a>
-      <a href="mailto:sayanikoley8@gmail.com" class="underline text-indigo-400">Email</a>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="p-10 fade-in text-center">
+      <h3 class="text-3xl font-bold mb-4 slide-in">Contact</h3>
+      <div class="space-x-4">
+      	<ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+      		<li class="mr-5 shrink-0 text-xs"><a class="block hover:text-slate-200" href="https://github.com/sayani2014" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)" title="GitHub"><span class="sr-only">GitHub</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a></li>
+      		<li class="mr-5 shrink-0 text-xs"><a class="block hover:text-slate-200" href="https://www.linkedin.com/in/sayani-koley/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn"><span class="sr-only">LinkedIn</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path></svg></a></li>
+      	</ul>
+      </div>
+    </section>
 
-  <footer class="text-center p-4 text-gray-500 mt-10">
-    &copy; 2025 Sayani Koley. All rights reserved.
-  </footer>
+    <footer class="text-center p-4 text-gray-500 mt-10">
+      &copy; 2025 Sayani Koley. All rights reserved.
+    </footer>
 
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      const current = body.getAttribute('data-theme');
-      const newTheme = current === 'dark' ? 'light' : 'dark';
-      body.setAttribute('data-theme', newTheme);
-    }
-  </script>
 </body>
 </html>
